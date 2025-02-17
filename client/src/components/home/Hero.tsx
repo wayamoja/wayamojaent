@@ -1,9 +1,14 @@
+import { useState } from "react";
 import { motion } from "framer-motion";
 import { Button } from "@/components/ui/button";
 import { ChevronRight } from "lucide-react";
-import { Link } from "wouter";
+import { Link, useLocation } from "wouter";
+import ConsultationModal from "@/components/shared/ConsultationModal";
 
 export default function Hero() {
+  const [, setLocation] = useLocation();
+  const [showConsultation, setShowConsultation] = useState(false);
+
   return (
     <div className="relative min-h-[600px] flex items-center bg-gradient-to-br from-blue-900 via-blue-800 to-blue-700 overflow-hidden">
       <div className="absolute inset-0 opacity-10">
@@ -35,13 +40,26 @@ export default function Hero() {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button size="lg" className="bg-blue-500 hover:bg-blue-600 text-lg">
-              Explore Solutions
-              <ChevronRight className="ml-2 h-5 w-5" />
-            </Button>
-            <Button size="lg" variant="outline" className="text-white border-white hover:bg-white/10 text-lg">
-              Schedule Consultation
-            </Button>
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Button 
+                size="lg" 
+                className="bg-blue-500 hover:bg-blue-600 text-lg"
+                onClick={() => setLocation("/services")}
+              >
+                Explore Solutions
+                <ChevronRight className="ml-2 h-5 w-5" />
+              </Button>
+            </motion.div>
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <Button 
+                size="lg" 
+                variant="outline" 
+                className="text-white border-white hover:bg-white/10 text-lg"
+                onClick={() => setShowConsultation(true)}
+              >
+                Schedule Consultation
+              </Button>
+            </motion.div>
           </div>
 
           <div className="mt-20 grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -84,6 +102,11 @@ export default function Hero() {
           </div>
         </motion.div>
       </div>
+
+      <ConsultationModal 
+        isOpen={showConsultation}
+        onClose={() => setShowConsultation(false)}
+      />
     </div>
   );
 }
