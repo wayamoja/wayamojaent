@@ -1,0 +1,89 @@
+"design the Waya Moja website to look modern, vibrant, and professional with dynamic visuals and engaging design elements.
+
+1. Color Palette:
+
+Use a dark blue or navy primary color for the header and footer, symbolizing trust and technology.
+
+Complement it with vibrant accent colors like electric blue, turquoise, or orange for buttons, icons, and links.
+
+Use subtle gradients for backgrounds to add depth, or apply light geometric textures for a sophisticated feel.
+
+
+
+2. Background & Textures:
+
+Add light background patterns or gradients to avoid a plain white look.
+
+Use subtle shadows and hover effects for buttons and images to create a 3D effect.
+
+
+
+3. Typography:
+
+Headings should use bold, sleek fonts like Poppins, Montserrat, or Lato.
+
+Body text should be clean and readable with ample line spacing.
+
+Ensure font sizes are well-balanced for readability across all devices.
+
+
+
+4. Hero Section (Home Page):
+
+Add a full-width background image or video showcasing networks and connectivity.
+༺ 🅘🅐🅝༻
+Add a full-width background image or video showcasing networks and connectivity.
+
+Include a bold, prominent headline with a contrasting color.
+
+Add an animated call-to-action button (e.g., “Get a Quote”) with hover effects.
+
+
+
+5. Navigation Bar:
+
+Make it a sticky, transparent navbar with hover transitions.
+
+Highlight the current page with a distinct color or underline effect.
+
+
+
+6. Animations:
+
+Add smooth animations and transitions for buttons, section reveals, and images. Use fade-ins and slide-in effects to add elegance without overwhelming the user.
+
+
+
+7. Service Section:
+
+Each service should have custom icons or images with hover effects.
+
+Use subtle background color changes for alternating sections.
+
+
+
+8. Portfolio/Projects:
+
+Use a masonry grid or carousel slider to display projects in an interactive, clickable gallery format.
+
+
+
+9. Contact Form:
+
+Modernize the form with rounded edges, clear placeholders, and hover animations.
+Mon 11:19 AM
+༺ 🅘🅐🅝༻
+Add a custom send button that changes color or size on hover.
+
+
+
+10. Footer:
+
+Use a darker background with contrasting text.
+
+Include social media icons with hover effects and clear contact details.
+
+
+
+
+Ensure the design is fully responsive, loads quickly, and is optimized for search engines. Create a cohesive, polished, and visually stunning website that feels dynamic yet professional."
