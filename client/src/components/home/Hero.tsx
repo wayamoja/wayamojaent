@@ -54,7 +54,7 @@ export default function Hero() {
               <Button 
                 size="lg" 
                 variant="outline" 
-                className="text-white border-white hover:bg-white/10 text-lg"
+                className="bg-blue-500 text-white border-white hover:bg-blue-600 text-lg shadow-lg"
                 onClick={() => setShowConsultation(true)}
               >
                 Schedule Consultation

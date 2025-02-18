@@ -43,8 +43,9 @@ export default function Contact() {
                 <div>
                   <h3 className="font-semibold mb-1">Address</h3>
                   <p className="text-gray-600">
-                    123 Business Street<br />
-                    City, State 12345
+                    1st floor, room 20, chaphi house<br />
+                    (bettan hotel), koinange street<br />
+                    nyahururu, kenya
                   </p>
                 </div>
               </div>
@@ -53,7 +54,7 @@ export default function Contact() {
                 <Phone className="w-6 h-6 text-blue-500 mt-1" />
                 <div>
                   <h3 className="font-semibold mb-1">Phone</h3>
-                  <p className="text-gray-600">(555) 123-4567</p>
+                  <p className="text-gray-600">+254 727666093</p>
                 </div>
               </div>
 

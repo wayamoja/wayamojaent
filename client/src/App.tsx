@@ -52,7 +52,18 @@ function Router() {
 }
 
 export default function App() {
+  const [showAnimation, setShowAnimation] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setShowAnimation(false);
+    }, 2500);
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
+    <>
+      {showAnimation && <LogoAnimation />}
     <StrictMode>
       <QueryClientProvider client={queryClient}>
         <Router />
