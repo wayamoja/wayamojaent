@@ -68,9 +68,9 @@ export default function Navbar() {
         <motion.div 
           initial={{ opacity: 0, y: -20 }}
           animate={{ opacity: 1, y: 0 }}
-          className="md:hidden"
+          className="md:hidden bg-blue-900/95 backdrop-blur supports-[backdrop-filter]:bg-blue-900/60"
         >
-          <div className="px-2 pt-2 pb-3 space-y-1">
+          <div className="px-4 pt-2 pb-3 space-y-2">
             {navLinks.map((link) => (
               <Link key={link.href} href={link.href}>
                 <motion.span 

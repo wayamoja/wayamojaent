@@ -49,10 +49,10 @@ const internetPlans = [
 
 export default function Services() {
   return (
-    <section className="py-24 bg-gradient-to-b from-gray-50 to-white">
+    <section className="py-12 sm:py-24 bg-gradient-to-b from-gray-50 to-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-3xl font-bold text-primary mb-4">Our Services</h2>
+        <div className="text-center mb-8 sm:mb-16">
+          <h2 className="text-2xl sm:text-3xl font-bold text-primary mb-4">Our Services</h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
             We offer comprehensive technology and security solutions to protect and 
             enhance your business infrastructure.

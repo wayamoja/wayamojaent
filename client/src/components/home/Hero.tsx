@@ -27,12 +27,12 @@ export default function Hero() {
           transition={{ duration: 0.8 }}
           className="text-center"
         >
-          <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white mb-6 px-4">
             Transforming Networks,<br />
             <span className="text-blue-300">Empowering Success</span>
           </h1>
 
-          <p className="text-xl text-blue-100 mb-8 max-w-3xl mx-auto">
+          <p className="text-lg sm:text-xl text-blue-100 mb-8 max-w-3xl mx-auto px-4">
             Leading the digital revolution with state-of-the-art security solutions and 
             enterprise Wi-Fi to advanced security systems. Waya Moja delivers unparalleled 
             connectivity that drives your business forward. Experience the future of 
