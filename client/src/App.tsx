@@ -1,4 +1,5 @@
-import { StrictMode } from "react";
+
+import { StrictMode, useState, useEffect } from "react";
 import { Switch, Route, useLocation } from "wouter";
 import { QueryClientProvider } from "@tanstack/react-query";
 import { queryClient } from "./lib/queryClient";
@@ -12,6 +13,7 @@ import Portfolio from "@/pages/Portfolio";
 import Contact from "@/pages/Contact";
 import Navbar from "@/components/layout/Navbar";
 import Footer from "@/components/layout/Footer";
+import LogoAnimation from "@/components/shared/LogoAnimation";
 
 const pageTransition = {
   initial: { opacity: 0, y: 20 },
@@ -62,9 +64,8 @@ export default function App() {
   }, []);
 
   return (
-    <>
-      {showAnimation && <LogoAnimation />}
     <StrictMode>
+      {showAnimation && <LogoAnimation />}
       <QueryClientProvider client={queryClient}>
         <Router />
         <Toaster />
