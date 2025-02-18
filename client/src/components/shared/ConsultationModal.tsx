@@ -27,13 +27,33 @@ export default function ConsultationModal({ isOpen, onClose }: ConsultationModal
     message: ""
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast({
-      title: "Consultation Scheduled",
-      description: "We'll contact you shortly to confirm your consultation.",
-    });
-    onClose();
+    try {
+      const response = await fetch('/api/schedule', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify(formData),
+      });
+      
+      if (response.ok) {
+        toast({
+          title: "Consultation Scheduled",
+          description: "We'll contact you shortly to confirm your consultation.",
+        });
+        onClose();
+      } else {
+        throw new Error('Failed to schedule consultation');
+      }
+    } catch (error) {
+      toast({
+        title: "Error",
+        description: "Failed to schedule consultation. Please try again.",
+        variant: "destructive"
+      });
+    }
   };
 
   return (

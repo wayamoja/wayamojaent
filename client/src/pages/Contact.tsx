@@ -23,7 +23,7 @@ export default function Contact() {
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
           >
-            <div className="bg-white p-8 rounded-lg shadow-sm">
+            <div className="bg-white p-4 sm:p-8 rounded-lg shadow-sm">
               <h2 className="text-2xl font-bold text-primary mb-6">Send us a message</h2>
               <ContactForm />
             </div>
